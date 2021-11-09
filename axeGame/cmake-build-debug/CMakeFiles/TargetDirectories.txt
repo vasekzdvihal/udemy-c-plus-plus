@@ -1,0 +1,3 @@
+C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/axeGame/cmake-build-debug/CMakeFiles/axeGame.dir
+C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/axeGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/axeGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
