@@ -46,13 +46,57 @@ RM = C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\zdvih\source\GitHub\udemy-c-plus-plus\axeGame
+CMAKE_SOURCE_DIR = C:\Users\zdvih\Desktop\raylib-cmake-template-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\zdvih\source\GitHub\udemy-c-plus-plus\axeGame\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\zdvih\Desktop\raylib-cmake-template-master\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cpack.exe --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package\fast: package
+.PHONY : package\fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cpack.exe --config ./CPackSourceConfig.cmake C:/Users/zdvih/Desktop/raylib-cmake-template-master/cmake-build-debug/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source\fast: package_source
+.PHONY : package_source\fast
+
+# Special rule for the target install/local
+install\local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local
+
+# Special rule for the target install/local
+install\local\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install\local\fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install\fast: preinstall\fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install\fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -74,11 +118,20 @@ rebuild_cache:
 rebuild_cache\fast: rebuild_cache
 .PHONY : rebuild_cache\fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components\fast: list_install_components
+.PHONY : list_install_components\fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zdvih\source\GitHub\udemy-c-plus-plus\axeGame\cmake-build-debug\CMakeFiles C:\Users\zdvih\source\GitHub\udemy-c-plus-plus\axeGame\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zdvih\Desktop\raylib-cmake-template-master\cmake-build-debug\CMakeFiles C:\Users\zdvih\Desktop\raylib-cmake-template-master\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zdvih\source\GitHub\udemy-c-plus-plus\axeGame\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zdvih\Desktop\raylib-cmake-template-master\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -102,45 +155,72 @@ preinstall\fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P C:\Users\zdvih\Desktop\raylib-cmake-template-master\cmake-build-debug\CMakeFiles\VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named axeGame
+# Target rules for targets named my_raylib_game
 
 # Build rule for target.
-axeGame: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) axeGame
-.PHONY : axeGame
+my_raylib_game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) my_raylib_game
+.PHONY : my_raylib_game
 
 # fast build rule for target.
-axeGame\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\axeGame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\axeGame.dir\build
-.PHONY : axeGame\fast
+my_raylib_game\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_raylib_game.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\my_raylib_game.dir\build
+.PHONY : my_raylib_game\fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+#=============================================================================
+# Target rules for targets named raylib
+
+# Build rule for target.
+raylib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) raylib
+.PHONY : raylib
+
+# fast build rule for target.
+raylib\fast:
+	$(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make /nologo -$(MAKEFLAGS) _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build
+.PHONY : raylib\fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw\fast:
+	$(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\build.make /nologo -$(MAKEFLAGS) _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\glfw.dir\build
+.PHONY : glfw\fast
+
+sources\main.obj: sources\main.c.obj
+.PHONY : sources\main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\axeGame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\axeGame.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+sources\main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_raylib_game.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\my_raylib_game.dir\sources\main.c.obj
+.PHONY : sources\main.c.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+sources\main.i: sources\main.c.i
+.PHONY : sources\main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\axeGame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\axeGame.dir\main.cpp.i
-.PHONY : main.cpp.i
+sources\main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_raylib_game.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\my_raylib_game.dir\sources\main.c.i
+.PHONY : sources\main.c.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+sources\main.s: sources\main.c.s
+.PHONY : sources\main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\axeGame.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\axeGame.dir\main.cpp.s
-.PHONY : main.cpp.s
+sources\main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_raylib_game.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\my_raylib_game.dir\sources\main.c.s
+.PHONY : sources\main.c.s
 
 # Help Target
 help:
@@ -149,11 +229,18 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... list_install_components
+	@echo ... package
+	@echo ... package_source
 	@echo ... rebuild_cache
-	@echo ... axeGame
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... glfw
+	@echo ... my_raylib_game
+	@echo ... raylib
+	@echo ... sources/main.obj
+	@echo ... sources/main.i
+	@echo ... sources/main.s
 .PHONY : help
 
 
@@ -165,6 +252,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P C:\Users\zdvih\Desktop\raylib-cmake-template-master\cmake-build-debug\CMakeFiles\VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
