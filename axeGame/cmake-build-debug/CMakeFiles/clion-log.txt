@@ -1,56 +1,14 @@
-C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" C:\Users\zdvih\Desktop\raylib-cmake-template-master
--- The C compiler identification is MSVC 19.29.30136.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- The CXX compiler identification is MSVC 19.29.30136.0
-CMake Warning (dev) at C:/Users/zdvih/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/bin/cmake/win/share/cmake-3.20/Modules/CMakeDetermineCXXCompiler.cmake:162 (if):
-  Policy CMP0054 is not set: Only interpret if() arguments as variables or
-  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
-  details.  Use the cmake_policy command to set the policy and suppress this
-  warning.
+C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" C:\Users\zdvih\source\GitHub\udemy-c-plus-plus\axeGame
+CMake Error: The current CMakeCache.txt directory C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/axeGame/cmake-build-debug/_deps/raylib-subbuild/CMakeCache.txt is different than the directory c:/Users/zdvih/Desktop/raylib-cmake-template-master/cmake-build-debug/_deps/raylib-subbuild where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
 
-  Quoted variables like "MSVC" will no longer be dereferenced when the policy
-  is set to NEW.  Since the policy is not set the OLD behavior will be used.
+CMake Error at C:/Users/zdvih/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/bin/cmake/win/share/cmake-3.20/Modules/FetchContent.cmake:1000 (message):
+  CMake step for raylib failed: 1
 Call Stack (most recent call first):
-  cmake-build-debug/_deps/raylib-src/CMakeLists.txt:2 (project)
-This warning is for project developers.  Use -Wno-dev to suppress it.
+  C:/Users/zdvih/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/bin/cmake/win/share/cmake-3.20/Modules/FetchContent.cmake:1141:EVAL:2 (__FetchContent_directPopulate)
+  C:/Users/zdvih/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/bin/cmake/win/share/cmake-3.20/Modules/FetchContent.cmake:1141 (cmake_language)
+  C:/Users/zdvih/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/bin/cmake/win/share/cmake-3.20/Modules/FetchContent.cmake:1184 (FetchContent_Populate)
+  CMakeLists.txt:10 (FetchContent_MakeAvailable)
 
-CMake Warning (dev) at C:/Users/zdvih/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/bin/cmake/win/share/cmake-3.20/Modules/CMakeDetermineCXXCompiler.cmake:183 (elseif):
-  Policy CMP0054 is not set: Only interpret if() arguments as variables or
-  keywords when unquoted.  Run "cmake --help-policy CMP0054" for policy
-  details.  Use the cmake_policy command to set the policy and suppress this
-  warning.
 
-  Quoted variables like "MSVC" will no longer be dereferenced when the policy
-  is set to NEW.  Since the policy is not set the OLD behavior will be used.
-Call Stack (most recent call first):
-  cmake-build-debug/_deps/raylib-src/CMakeLists.txt:2 (project)
-This warning is for project developers.  Use -Wno-dev to suppress it.
-
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Performing Test COMPILER_HAS_THOSE_TOGGLES
--- Performing Test COMPILER_HAS_THOSE_TOGGLES - Failed
--- Testing if -Werror=pointer-arith can be used -- Failed
--- Testing if -Werror=implicit-function-declaration can be used -- Failed
--- Testing if -fno-strict-aliasing can be used -- Failed
--- Using raylib's GLFW
--- Looking for pthread.h
--- Looking for pthread.h - not found
--- Found Threads: TRUE  
--- Using Win32 for window creation
--- Audio Backend: miniaudio
--- Building raylib static library
--- Generated build type: Debug
--- Compiling with the flags:
---   PLATFORM=PLATFORM_DESKTOP
---   GRAPHICS=GRAPHICS_API_OPENGL_33
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/zdvih/Desktop/raylib-cmake-template-master/cmake-build-debug
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/axeGame/cmake-build-debug/CMakeFiles/CMakeOutput.log".

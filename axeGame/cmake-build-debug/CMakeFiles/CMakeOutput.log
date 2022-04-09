@@ -21,51 +21,16 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/zdvih/Desktop/raylib-cmake-template-master/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/axeGame/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/zdvih/Desktop/raylib-cmake-template-master/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/axeGame/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake -f Makefile /nologo cmTC_738f4\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_738f4.dir\build.make /nologo -L                  CMakeFiles\cmTC_738f4.dir\build
-Building C object CMakeFiles/cmTC_738f4.dir/CMakeCCompilerABI.c.obj
-	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_738f4.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\zdvih\Desktop\raylib-cmake-template-master\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @C:\Users\zdvih\AppData\Local\Temp\nm1A6F.tmp
-Linking C executable cmTC_738f4.exe
-	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_738f4.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_738f4.dir\objects1.rsp @C:\Users\zdvih\AppData\Local\Temp\nm1AFC.tmp
-
-
-
-Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
-Build flags: 
-Id flags:  
-
-The output was:
-0
-Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30136 for x86
-Copyright (C) Microsoft Corporation.  All rights reserved.
-
-CMakeCXXCompilerId.cpp
-Microsoft (R) Incremental Linker Version 14.29.30136.0
-Copyright (C) Microsoft Corporation.  All rights reserved.
-
-/out:CMakeCXXCompilerId.exe 
-CMakeCXXCompilerId.obj 
-
-
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
-
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
-
-The CXX compiler identification is MSVC, found in "C:/Users/zdvih/Desktop/raylib-cmake-template-master/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
-
-Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/zdvih/Desktop/raylib-cmake-template-master/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):nmake -f Makefile /nologo cmTC_86cbd\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_86cbd.dir\build.make /nologo -L                  CMakeFiles\cmTC_86cbd.dir\build
-Building CXX object CMakeFiles/cmTC_86cbd.dir/CMakeCXXCompilerABI.cpp.obj
-	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_86cbd.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\Users\zdvih\Desktop\raylib-cmake-template-master\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @C:\Users\zdvih\AppData\Local\Temp\nm6EB9.tmp
-Linking CXX executable cmTC_86cbd.exe
-	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_86cbd.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_86cbd.dir\objects1.rsp @C:\Users\zdvih\AppData\Local\Temp\nm6F56.tmp
+Run Build Command(s):nmake -f Makefile /nologo cmTC_8b968\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_8b968.dir\build.make /nologo -L                  CMakeFiles\cmTC_8b968.dir\build
+Building C object CMakeFiles/cmTC_8b968.dir/CMakeCCompilerABI.c.obj
+	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_8b968.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\zdvih\source\GitHub\udemy-c-plus-plus\axeGame\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @C:\Users\zdvih\AppData\Local\Temp\nm94FE.tmp
+Linking C executable cmTC_8b968.exe
+	C:\Users\zdvih\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_8b968.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_8b968.dir\objects1.rsp @C:\Users\zdvih\AppData\Local\Temp\nm96E3.tmp
 
 
 
