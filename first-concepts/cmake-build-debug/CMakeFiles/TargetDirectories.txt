@@ -1,3 +1,0 @@
-C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/first-concepts/cmake-build-debug/CMakeFiles/first_concepts.dir
-C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/first-concepts/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/zdvih/source/GitHub/udemy-c-plus-plus/first-concepts/cmake-build-debug/CMakeFiles/rebuild_cache.dir
